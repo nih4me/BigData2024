@@ -52,11 +52,18 @@ host_counts = 1
 batch_size = N / host_count
 
 def is_prime(n):
-   for i in range(n):
-      if i > 1:
-         if n % i == 0:
+    if n <= 1:
+        return False
+    if n == 2 or n == 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
             return False
-   return True
+        i += 6
+    return True
 
 def map(start, end):
    primes = [n for in range(start, end) if is_prime(n)]
