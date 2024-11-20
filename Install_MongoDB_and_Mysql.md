@@ -1,12 +1,20 @@
-1. On MAC using Homebrew service
+# How to install mongodb and mysql on macOS and Linux
 
-    1.1 To install Homebrew, open Terminal and run:
-    
-        $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+## On mac using Homebrew service
 
-    1.2 Then install MySQL using Homebrew:
+### To install Homebrew, open Terminal and run:
 
-        $ brew install mysql
+```sh
+$ /usr/bin/ruby -e \
+"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+### Then install MySQL using Homebrew:
+
+```sh
+$ brew install mysql
+```
+
 
     1.3 Install brew services:
 
@@ -22,7 +30,7 @@
         
     Now your MySQL server is ready.
 
-2. On Linux / Debian and Ubuntu
+1. On Linux / Debian and Ubuntu
 
     2.1 Setup MySQL PPA
 
